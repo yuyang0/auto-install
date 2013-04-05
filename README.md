@@ -9,6 +9,7 @@
 必须是使用debian包管理系统的发行版，红帽系不支持
 
 ## How to use
+修改ppa.lst, ssoftware.lst, url.lst
 ./main.sh
 
 ## Support / issues
