@@ -1,0 +1,8 @@
+#other software can not install from repo or ppa
+# format: name url
+# name is what wget will rename to, url is the link for wget to download
+
+#dropbox.deb                   https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_1.6.0_i386.deb
+#dropbox-lnx.x86.tar.gz        https://www.dropbox.com/download?plat=lnx.x86
+
+wps-linux.deb                 http://wdl.cache.ijinshan.com/wps/download/Linux/unstable/wps-office_8.1.0.3724~b1p2_i386.deb

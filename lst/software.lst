@@ -1,0 +1,12 @@
+# software in official repo or ppa
+
+#install sougou input method
+fcitx fcitx-config-gtk fcitx-sunpinyin fcitx-googlepinyin fcitx-module-cloudpinyin  fcitx-sogoupinyin
+
+smplayer
+audacious
+
+pidgin libpurple0 pidgin-lwqq
+
+octave
+stardict
