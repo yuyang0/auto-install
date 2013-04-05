@@ -8,6 +8,10 @@
 ## Requirements
 必须是使用debian包管理系统的发行版，红帽系不支持
 
+## How to use
+./main.sh
+
 ## Support / issues
 有任何问题，请提交issue
+
 Yu Yang
