@@ -1,8 +1,4 @@
-read -t 3 -p "Enter the file which contains the softwares you want to install(default:./lst/url.lst):" URL_FILE
-
-if [ "$URL_FILE" == "" ];then
-    URL_FILE=./lst/url.lst
-fi
+URL_FILE=./lst/url.lst
 
 while read line
 do

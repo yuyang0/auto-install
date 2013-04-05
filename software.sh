@@ -1,7 +1,4 @@
-read -p "Enter the file which contains the softwares you want to install(default:./lst/software.lst)" SOFTWARE_FILE
-if [ "$SOFTWARE_FILE" == "" ];then
-    $SOFTWARE_FILE="./lst/software.lst"
-fi
+SOFTWARE_FILE=./lst/software.lst
 
 while read line
 do

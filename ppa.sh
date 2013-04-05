@@ -1,7 +1,4 @@
-read -p "Enter the file which cntained ppa(default:./lst/ppa.lst):" PPA_FILE
-if [ "$PPA_FILE" == "" ];then
-    PPA_FILE=./lst/ppa.lst
-fi
+PPA_FILE=./lst/ppa.lst
 
 while read line
 do
