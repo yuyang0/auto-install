@@ -1,11 +1,15 @@
 TMP=~/install_tmp
-read -p "Enter your root password:" PASSWORD
+read -s -p "Enter your root password:" PASSWORD
 
-if [ "$PASSWORD" == "" ];then
-    echo "you did not enter your root password,the script will exit"
-    exit
-fi
+# check the password
+while [[ 1 ]]; do
+	echo "$PASSWORD" | sudo -S echo " " && break
+	echo
+	read -s -p "incorrect password($PASSWORD), please try again: " PASSWORD
+done
+
 
 test -d $TMP || mkdir $TMP
 cp -rf ./lst $TMP
+cp -f *.sh $TMP
 cd $TMP
