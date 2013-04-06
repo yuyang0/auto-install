@@ -9,3 +9,6 @@ ppa:tualatrix/ppa
 
 # ppa for sublime-text-2
 ppa:webupd8team/sublime-text-2
+
+# ppa for emacs24
+ppa:cassou/emacs

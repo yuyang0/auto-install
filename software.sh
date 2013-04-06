@@ -1,5 +1,7 @@
 SOFTWARE_FILE=./lst/software.lst
-
+if [ -z "$APT_GET" ]; then
+	APT_GET=apt-get
+fi
 while read line
 do
     #ignore blank line or comment line
@@ -7,5 +9,5 @@ do
     if [ -z "$is_valid" ];then
         continue
     fi
-    echo "$PASSWORD"|sudo -S APT-GET -y install "$line"
+    echo "$PASSWORD"|sudo -S $APT_GET -y install "$line"
 done < $SOFTWARE_FILE

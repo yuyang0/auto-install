@@ -1,12 +1,24 @@
 # software in official repo or ppa
 
+# fix the "checking the battery state" bug
+gdm
+
 #install sougou input method
 fcitx fcitx-config-gtk fcitx-sunpinyin fcitx-googlepinyin fcitx-module-cloudpinyin  fcitx-sogoupinyin
+# install emacs24(not official repo)
+emacs24
 
 smplayer
 audacious
 
 pidgin libpurple0 pidgin-lwqq
 
-octave
 stardict
+markdown
+p7zip
+
+valgrind
+octave
+mit-scheme
+sbcl
+

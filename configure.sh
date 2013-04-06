@@ -1,6 +1,6 @@
 function dropbox_setting()
 {
-    mv ./.dropbox-dist ~/
+    test -d ~/.dropbox-dist || mv ./.dropbox-dist ~/
 }
 function stardict_setting()
 {
@@ -24,5 +24,5 @@ fi
 
 emacs_installed=$(which emacs)
 if [ -n $emacs_installed ];then
-    emacs_installed
+    emacs_setting
 fi

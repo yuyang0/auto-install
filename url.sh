@@ -9,7 +9,7 @@ do
     fi
     name=$(echo "$line" | awk '{print $1}')
     url=$(echo "$line" | awk '{print $2}')
-    wget -O "$name" "$url" || continue
+    test -e $name || wget -O "$name" "$url" || continue
 
     # is deb file
     is_deb=$(echo $name | grep '\.deb$')
