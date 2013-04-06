@@ -13,12 +13,14 @@ do
 
     # is deb file
     is_deb=$(echo $name | grep '\.deb$')
-    if [ -n $is_deb ]; then
-        echo "$PASSWORD" | sudo -S dpkg -i "$name"
+    if [ -n "$is_deb" ]; then
+        test -e $name && echo "$PASSWORD" | sudo -S dpkg -i "$name"
+        continue
     fi
 
     is_tar=$(echo $name | egrep '\.tar\.(gz|bz2)$')
-    if [ -n $is_tar ];then
-        tar -xf $name
+    if [ -n "$is_tar" ];then
+        test -e $name && tar -xf $name
+        continue
     fi
 done < $URL_FILE
