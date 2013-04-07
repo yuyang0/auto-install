@@ -13,16 +13,16 @@ function emacs_setting()
 }
 
 dropbox_installed=$(which dropbox)
-if [ -n $dropbox_installed ];then
+if [ -n "$dropbox_installed" ];then
     dropbox_setting
 fi
 
 stardict_installed=$(which stardict)
-if [ -n $stardict_installed ];then
+if [ -n "$stardict_installed" ];then
     stardict_setting
 fi
 
 emacs_installed=$(which emacs)
-if [ -n $emacs_installed ];then
+if [ -n "$emacs_installed" ];then
     emacs_setting
 fi
