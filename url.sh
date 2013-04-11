@@ -9,12 +9,12 @@ do
     fi
     name=$(echo "$line" | awk '{print $1}')
     url=$(echo "$line" | awk '{print $2}')
-    test -e $name || wget -O "$name" "$url" || continue
+    test -e $name || wget -O $name $url || continue
 
     # is deb file
     is_deb=$(echo $name | grep '\.deb$')
     if [ -n "$is_deb" ]; then
-        test -e $name && echo "$PASSWORD" | sudo -S dpkg -i "$name"
+        test -e $name && echo "$PASSWORD" | sudo -S dpkg -i $name
         continue
     fi
 
