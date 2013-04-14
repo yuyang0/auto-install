@@ -10,15 +10,15 @@ emacs24
 
 smplayer
 audacious
-
+#qq plugin for pidgin
 pidgin libpurple0 pidgin-lwqq
-
-#stardict
+stardict sdcv
 markdown
 p7zip
 
 valgrind
 octave
-mit-scheme
+racket
 sbcl
 
+cscope
