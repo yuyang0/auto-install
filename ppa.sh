@@ -12,6 +12,7 @@ done < $PPA_FILE
 # install apt-fast
 echo $PASSWORD | sudo -S add-apt-repository -y ppa:apt-fast/stable
 echo $PASSWORD | sudo -S apt-get -y update || exit_with_msg 'update error'
+echo $PASSWORD | sudo -S apt-get -y upgrade || exit_with_msg 'upgrade error'
 echo $PASSWORD | sudo -S apt-get -y install wget aria2 apt-fast
 
 # check if apt-fast is installed
