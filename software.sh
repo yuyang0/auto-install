@@ -9,5 +9,5 @@ do
     if [ -z "$is_valid" ];then
         continue
     fi
-    echo $PASSWORD | sudo -S $APT_GET -y install $line
+    echo $PASSWORD | sudo -S $APT_GET -y install $line || exit_with_msg "install $line error"
 done < $SOFTWARE_FILE

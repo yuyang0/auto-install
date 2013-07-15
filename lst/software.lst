@@ -1,24 +1,49 @@
 # software in official repo or ppa
 
 # fix the "checking the battery state" bug
-gdm
+# gdm
 
 #install sougou input method
 fcitx fcitx-config-gtk fcitx-sunpinyin fcitx-googlepinyin fcitx-module-cloudpinyin  fcitx-sogoupinyin
 # install emacs24(not official repo)
 emacs24
 
+# multimedia
 smplayer
 audacious
+#screenshot
+shutter kazam
+nemo-dropbox
+
+# for type breaking(timer)
+xwrits
 #qq plugin for pidgin
 pidgin libpurple0 pidgin-lwqq
 stardict sdcv
 markdown
 p7zip
 
+# some program tools
 valgrind
+g++
+git git-core git-gui subversion
+mercurial
+ruby
+#external program for emacs
+texlive texlive-xetex texlive-latex-extra
 octave
-racket
-sbcl
-
+racket sbcl
 cscope
+w3m
+graphviz gnuplot
+ipython
+# emacs mew openssl support
+stunnel
+
+zlib1g-dev
+tree
+# for twisted
+python-pip
+python2.7-dev python2.7-doc
+pychecker pyflakes
+npm tidy

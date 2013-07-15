@@ -2,9 +2,9 @@
 # format: name url
 # name is what wget will rename to, url is the link for wget to download
 
-#dropbox.deb                   https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_1.6.0_i386.deb
+#dropbox.deb                   https://www.dropbox.com/download?dl=packages/ubuntu/#dropbox_1.6.0_i386.deb
 #dropbox-lnx.x86.tar.gz        https://www.dropbox.com/download?plat=lnx.x86
 
-# wps-linux.deb                 http://wdl.cache.ijinshan.com/wps/download/Linux/unstable/wps-office_8.1.0.3724~b1p2_i386.deb
+wps-linux.deb                 http://wdl.cache.ijinshan.com/wps/download/Linux/unstable/kingsoft-office_9.1.0.4032~a10_i386.deb
 
 #xmind.deb                     http://www.xmind.net/xmind/downloads/xmind-linux-3.3.1.201212250029_i386.deb
